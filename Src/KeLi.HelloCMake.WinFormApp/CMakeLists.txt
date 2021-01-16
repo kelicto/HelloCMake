@@ -22,15 +22,19 @@ add_executable(${PROJECT_NAME}
 	MainForm.resx
 )
 
-# Set the source file properties for Windows Forms use.
-csharp_set_windows_forms_properties(
-    App.config
+# Set resource file properties.
+csharp_set_designer_cs_properties(
 	Properties/AssemblyInfo.cs
-    Properties/Resources.resx
+	Properties/Resources.resx
 	Properties/Resources.Designer.cs
 	Properties/Settings.settings
 	Properties/Settings.Designer.cs
-    
+)
+
+# Set the source file properties for Windows Forms.
+csharp_set_windows_forms_properties(
+    App.config
+	
 	Program.cs
 	
 	MainForm.cs

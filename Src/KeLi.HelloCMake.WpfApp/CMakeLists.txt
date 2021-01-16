@@ -9,6 +9,7 @@ include(CSharpUtilities)
 # The .resx and other Properties files are optional here, but including them makes them visible in the VS solution for easy editing. 
 add_executable(${PROJECT_NAME}
     App.config
+	
 	Properties/AssemblyInfo.cs
 	Properties/Resources.resx
 	Properties/Resources.Designer.cs
@@ -22,14 +23,18 @@ add_executable(${PROJECT_NAME}
 	MainWnd.xaml.cs
 )
 
-# Set the source file properties for Windows Forms use.
+# Set resource file properties.
+csharp_set_designer_cs_properties(
+	Properties/AssemblyInfo.cs
+	Properties/Resources.resx
+	Properties/Resources.Designer.cs
+	Properties/Settings.settings
+	Properties/Settings.Designer.cs
+)
+
+# Set the source file properties for WPF.
 csharp_set_xaml_cs_properties(
     App.config
-	Properties/AssemblyInfo.cs
-	Properties/Resources.resx
-	Properties/Resources.Designer.cs
-	Properties/Settings.settings
-	Properties/Settings.Designer.cs
 
     App.xaml
 	App.xaml.cs
@@ -38,10 +43,13 @@ csharp_set_xaml_cs_properties(
 	MainWnd.xaml.cs
 )
 
-# Set the .NET Framework version for the executable.
+# Set the xaml as ApplicationDefinition for WPF.
+set_property(SOURCE App.xaml PROPERTY VS_XAML_TYPE "ApplicationDefinition")
+
+# Set the .NET Framework version.
 set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION "v4.5")
 
-# Set the .NET Framework version for the executable.
+# Set the .NET Framework version.
 set_property(TARGET ${PROJECT_NAME} PROPERTY VS_GLOBAL_ROOTNAMESPACE ${PROJECT_NAME})
 
 # Set the executable to be 32-bit.

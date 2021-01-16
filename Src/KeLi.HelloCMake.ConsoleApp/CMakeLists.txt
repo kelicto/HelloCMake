@@ -14,7 +14,7 @@ add_executable(${PROJECT_NAME}
     Program.cs
 )
 
-# Set the source file properties for Windows Forms use.
+# Set the source file properties for Windows Forms.
 #csharp_set_windows_forms_properties()
 
 # Set the .NET Framework version.
