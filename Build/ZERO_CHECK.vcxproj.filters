@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\CMakeFiles\e79c9d06f1bf36df68f5bcaed054845f\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{09751BF1-B9A1-3022-BC8D-A47844041586}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

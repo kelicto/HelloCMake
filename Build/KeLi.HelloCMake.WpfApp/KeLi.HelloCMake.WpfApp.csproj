@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F05AD505-2E3E-3964-BDAA-A8565564A5D3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>KeLi.HelloCMake.WpfApp</ProjectName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.WpfApp\Debug\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>KeLi.HelloCMake.WpfApp</AssemblyName>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.WpfApp\Debug\KeLi.HelloCMake.WpfApp.exe</StartProgram>
+    <AdditionalOptions>/langversion:latest</AdditionalOptions>
+    <DebugType>full</DebugType>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <Optimize>false</Optimize>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <OutputPath>C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.WpfApp\Release\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>KeLi.HelloCMake.WpfApp</AssemblyName>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.WpfApp\Release\KeLi.HelloCMake.WpfApp.exe</StartProgram>
+    <AdditionalOptions>/langversion:latest</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>queue</ErrorReport>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <OutputPath>C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.WpfApp\MinSizeRel\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>KeLi.HelloCMake.WpfApp</AssemblyName>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.WpfApp\MinSizeRel\KeLi.HelloCMake.WpfApp.exe</StartProgram>
+    <AdditionalOptions>/langversion:latest</AdditionalOptions>
+    <DebugType>none</DebugType>
+    <DefineConstants></DefineConstants>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <OutputPath>C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.WpfApp\RelWithDebInfo\</OutputPath>
+    <PlatformToolset>v142</PlatformToolset>
+    <AssemblyName>KeLi.HelloCMake.WpfApp</AssemblyName>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.WpfApp\RelWithDebInfo\KeLi.HelloCMake.WpfApp.exe</StartProgram>
+    <AdditionalOptions>/langversion:latest</AdditionalOptions>
+    <DebugType>full</DebugType>
+    <DefineConstants></DefineConstants>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.CSharp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <None Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Src\KeLi.HelloCMake.WpfApp\CMakeLists.txt">
+      <Link>CMakeLists.txt</Link>
+    </None>
+  </ItemGroup>
+  <Target Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"
+    Name="CustomCommand_Debug_a7491df0ef4d2cb9dcdc85cc7f01788a"
+    Inputs="C:/Users/KeLi/source/repos/KeLi.HelloCMake/Src/KeLi.HelloCMake.WpfApp/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.18\Modules\CSharpUtilities.cmake"
+    Outputs="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.WpfApp\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule C:/Users/KeLi/source/repos/KeLi.HelloCMake/Src/KeLi.HelloCMake.WpfApp/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -SC:/Users/KeLi/source/repos/KeLi.HelloCMake/Src -BC:/Users/KeLi/source/repos/KeLi.HelloCMake/Build --check-stamp-file C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.WpfApp/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd" />
+  </Target>
+  <Target Condition="'$(Configuration)|$(Platform)'=='Release|x64'"
+    Name="CustomCommand_Release_a7491df0ef4d2cb9dcdc85cc7f01788a"
+    Inputs="C:/Users/KeLi/source/repos/KeLi.HelloCMake/Src/KeLi.HelloCMake.WpfApp/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.18\Modules\CSharpUtilities.cmake"
+    Outputs="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.WpfApp\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule C:/Users/KeLi/source/repos/KeLi.HelloCMake/Src/KeLi.HelloCMake.WpfApp/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -SC:/Users/KeLi/source/repos/KeLi.HelloCMake/Src -BC:/Users/KeLi/source/repos/KeLi.HelloCMake/Build --check-stamp-file C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.WpfApp/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd" />
+  </Target>
+  <Target Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"
+    Name="CustomCommand_MinSizeRel_a7491df0ef4d2cb9dcdc85cc7f01788a"
+    Inputs="C:/Users/KeLi/source/repos/KeLi.HelloCMake/Src/KeLi.HelloCMake.WpfApp/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.18\Modules\CSharpUtilities.cmake"
+    Outputs="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.WpfApp\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule C:/Users/KeLi/source/repos/KeLi.HelloCMake/Src/KeLi.HelloCMake.WpfApp/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -SC:/Users/KeLi/source/repos/KeLi.HelloCMake/Src -BC:/Users/KeLi/source/repos/KeLi.HelloCMake/Build --check-stamp-file C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.WpfApp/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd" />
+  </Target>
+  <Target Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"
+    Name="CustomCommand_RelWithDebInfo_a7491df0ef4d2cb9dcdc85cc7f01788a"
+    Inputs="C:/Users/KeLi/source/repos/KeLi.HelloCMake/Src/KeLi.HelloCMake.WpfApp/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.18\Modules\CSharpUtilities.cmake"
+    Outputs="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.WpfApp\CMakeFiles\generate.stamp">
+    <Exec Command="echo Building Custom Rule C:/Users/KeLi/source/repos/KeLi.HelloCMake/Src/KeLi.HelloCMake.WpfApp/CMakeLists.txt" />
+    <Exec Command="setlocal&#10;&quot;C:\Program Files\CMake\bin\cmake.exe&quot; -SC:/Users/KeLi/source/repos/KeLi.HelloCMake/Src -BC:/Users/KeLi/source/repos/KeLi.HelloCMake/Build --check-stamp-file C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.WpfApp/CMakeFiles/generate.stamp&#10;if %errorlevel% neq 0 goto :cmEnd&#10;:cmEnd&#10;endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone&#10;:cmErrorLevel&#10;exit /b %1&#10;:cmDone&#10;if %errorlevel% neq 0 goto :VCEnd" />
+  </Target>
+  <ItemGroup>
+    <None Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Src\KeLi.HelloCMake.WpfApp\App.config">
+      <Link>App.config</Link>
+    </None>
+    <Compile Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Src\KeLi.HelloCMake.WpfApp\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Src\KeLi.HelloCMake.WpfApp\Properties\Resources.Designer.cs">
+      <Link>Properties\Resources.Designer.cs</Link>
+    </Compile>
+    <None Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Src\KeLi.HelloCMake.WpfApp\Properties\Settings.settings">
+      <Link>Properties\Settings.settings</Link>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Src\KeLi.HelloCMake.WpfApp\Properties\Settings.Designer.cs">
+      <Link>Properties\Settings.Designer.cs</Link>
+    </Compile>
+    <Compile Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Src\KeLi.HelloCMake.WpfApp\App.xaml.cs">
+      <Link>App.xaml.cs</Link>
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Src\KeLi.HelloCMake.WpfApp\MainWnd.xaml.cs">
+      <Link>MainWnd.xaml.cs</Link>
+      <DependentUpon>MainWnd.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Core">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="RevitAPI">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>True</Private>
+      <HintPath>C:\Users\KeLi\source\repos\KeLi.Libs\Revit.API.2016\RevitAPI.dll;VS_DOTNET_REFERENCE_RevitAPIUI;C:\Users\KeLi\source\repos\KeLi.Libs\Revit.API.2016\RevitAPIUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Src\KeLi.HelloCMake.WpfApp\Properties\Resources.resx">
+      <Link>Properties\Resources.resx</Link>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Src\KeLi.HelloCMake.WpfApp\App.xaml">
+      <Link>App.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Src\KeLi.HelloCMake.WpfApp\MainWnd.xaml">
+      <Link>MainWnd.xaml</Link>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\ZERO_CHECK.vcxproj">
+      <Project>{C0C204B7-C3EF-3507-B134-657F614E5A2B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.Business\KeLi.HelloCMake.Business.csproj">
+      <Project>{F3282A51-37E2-300D-8CAD-5E8A904C5ED3}</Project>
+      <Name>KeLi.HelloCMake.Business</Name>
+      <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\KeLi\source\repos\KeLi.HelloCMake\Build\KeLi.HelloCMake.Utils\KeLi.HelloCMake.Utils.csproj">
+      <Project>{EE1D05AC-F6F1-34CF-AA88-B10B09132F51}</Project>
+      <Name>KeLi.HelloCMake.Utils</Name>
+      <SkipGetTargetFrameworkProperties>true</SkipGetTargetFrameworkProperties>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'MinSizeRel'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'RelWithDebInfo'">
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildDependsOn>
+      CustomCommand_Debug_a7491df0ef4d2cb9dcdc85cc7f01788a;
+      CustomCommand_MinSizeRel_a7491df0ef4d2cb9dcdc85cc7f01788a;
+      CustomCommand_RelWithDebInfo_a7491df0ef4d2cb9dcdc85cc7f01788a;
+      CustomCommand_Release_a7491df0ef4d2cb9dcdc85cc7f01788a;
+      $(BuildDependsOn)
+</BuildDependsOn>
+  </PropertyGroup>
+</Project>

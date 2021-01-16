@@ -1,0 +1,12 @@
+C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/CMakeFiles/ALL_BUILD.dir
+C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.ConsoleApp/CMakeFiles/KeLi.HelloCMake.ConsoleApp.dir
+C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.ConsoleApp/CMakeFiles/ALL_BUILD.dir
+C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.WinFormApp/CMakeFiles/KeLi.HelloCMake.WinFormApp.dir
+C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.WinFormApp/CMakeFiles/ALL_BUILD.dir
+C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.WpfApp/CMakeFiles/KeLi.HelloCMake.WpfApp.dir
+C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.WpfApp/CMakeFiles/ALL_BUILD.dir
+C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.Business/CMakeFiles/KeLi.HelloCMake.Business.dir
+C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.Business/CMakeFiles/ALL_BUILD.dir
+C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.Utils/CMakeFiles/KeLi.HelloCMake.Utils.dir
+C:/Users/KeLi/source/repos/KeLi.HelloCMake/Build/KeLi.HelloCMake.Utils/CMakeFiles/ALL_BUILD.dir
