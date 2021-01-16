@@ -38,8 +38,11 @@ csharp_set_windows_forms_properties(
 	MainForm.resx
 )
 
-# Set the .NET Framework version for the executable.
+# Set the .NET Framework version.
 set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION "v4.5")
+
+# Sets the root namespace.
+set_property(TARGET ${PROJECT_NAME} PROPERTY VS_GLOBAL_ROOTNAMESPACE ${PROJECT_NAME})
 
 # Set the executable to be 32/64-bit.
 set_property(TARGET ${PROJECT_NAME} PROPERTY WIN32_EXECUTABLE TRUE)

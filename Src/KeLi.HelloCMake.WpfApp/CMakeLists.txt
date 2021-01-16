@@ -41,6 +41,9 @@ csharp_set_xaml_cs_properties(
 # Set the .NET Framework version for the executable.
 set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION "v4.5")
 
+# Set the .NET Framework version for the executable.
+set_property(TARGET ${PROJECT_NAME} PROPERTY VS_GLOBAL_ROOTNAMESPACE ${PROJECT_NAME})
+
 # Set the executable to be 32-bit.
 set_property(TARGET ${PROJECT_NAME} PROPERTY WIN32_EXECUTABLE TRUE)
 
