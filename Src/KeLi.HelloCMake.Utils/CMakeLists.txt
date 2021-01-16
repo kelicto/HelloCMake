@@ -37,5 +37,7 @@ set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DOTNET_REFERENCES
 # If necessary, link in other library/DLL references, such as 3rd party libraries.
 set_property(TARGET ${PROJECT_NAME} PROPERTY
     VS_DOTNET_REFERENCE_RevitAPI "${LIBS_PATH}/Revit.API.2016/RevitAPI.dll"
+)
+set_property(TARGET ${PROJECT_NAME} PROPERTY
 	VS_DOTNET_REFERENCE_RevitAPIUI "${LIBS_PATH}/Revit.API.2016/RevitAPIUI.dll"
 )
