@@ -5,6 +5,15 @@ project("KeLi.HelloCMake.WinFormApp" LANGUAGES CSharp)
 # Include CMake utilities for CSharp, for WinForm and WPF application support.
 include(CSharpUtilities)
 
+# Define a variable to manage some resources.
+set(RESOURCE_NAME
+	"Data/001"
+	"Data/002"
+)
+
+# Set the build action of the custom resources.
+set_property(SOURCE ${RESOURCE_NAME} PROPERTY VS_TOOL_OVERRIDE "Resource")
+
 # Define the executable, including any .cs files. 
 # The .resx and other Properties files are optional here, but including them makes them visible in the VS solution for easy editing. 
 add_executable(${PROJECT_NAME}
@@ -20,6 +29,8 @@ add_executable(${PROJECT_NAME}
 	MainForm.cs
 	MainForm.Designer.cs
 	MainForm.resx
+	
+	${RESOURCE_NAME}
 )
 
 # Set resource file properties.
