@@ -44,3 +44,11 @@ set_property(TARGET ${PROJECT_NAME} PROPERTY
 set_property(TARGET ${PROJECT_NAME} PROPERTY
 	VS_DOTNET_REFERENCE_RevitAPIUI "${LIBS_PATH}/Revit.API.2016/RevitAPIUI.dll"
 )
+
+set_property(TARGET ${PROJECT_NAME} PROPERTY VS_PACKAGE_REFERENCES 
+	"Newtonsoft.Json_12.0.3"
+	
+	"EPPlus_5.5.1"
+	"Microsoft.IO.RecyclableMemoryStream_1.3.6"
+	"System.ComponentModel.Annotations_4.7.0"
+)
