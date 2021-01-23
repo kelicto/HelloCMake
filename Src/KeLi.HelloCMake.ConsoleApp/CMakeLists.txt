@@ -9,13 +9,10 @@ include(CSharpUtilities)
 # The .resx and other Properties files are optional here, but including them makes them visible in the VS solution for easy editing. 
 add_executable(${PROJECT_NAME}
     App.config
-	Properties/AssemblyInfo.cs
-	
+    Properties/AssemblyInfo.cs
+    
     Program.cs
 )
-
-# Set the source file properties for Windows Forms.
-#csharp_set_windows_forms_properties()
 
 # Set the .NET Framework version.
 set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION "v4.5")
@@ -37,8 +34,8 @@ set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DOTNET_REFERENCES
 
 # If necessary, link in other library dependencies that were built locally in this source tree.
 target_link_libraries(${PROJECT_NAME}
-	"KeLi.HelloCMake.Business"
-	"KeLi.HelloCMake.Utils"
+    "KeLi.HelloCMake.Business"
+    "KeLi.HelloCMake.Utils"
 )
 
 # If necessary, link in other library/DLL references, such as 3rd party libraries.
@@ -46,5 +43,5 @@ set_property(TARGET ${PROJECT_NAME} PROPERTY
     VS_DOTNET_REFERENCE_RevitAPI "${LIBS_PATH}/Revit.API.2016/RevitAPI.dll"
 )
 set_property(TARGET ${PROJECT_NAME} PROPERTY
-	VS_DOTNET_REFERENCE_RevitAPIUI "${LIBS_PATH}/Revit.API.2016/RevitAPIUI.dll"
+    VS_DOTNET_REFERENCE_RevitAPIUI "${LIBS_PATH}/Revit.API.2016/RevitAPIUI.dll"
 )

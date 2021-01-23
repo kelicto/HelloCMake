@@ -9,27 +9,27 @@ include(CSharpUtilities)
 # The .resx and other Properties files are optional here, but including them makes them visible in the VS solution for easy editing. 
 add_executable(${PROJECT_NAME}
     App.config
-	
-	Properties/AssemblyInfo.cs
-	Properties/Resources.resx
-	Properties/Resources.Designer.cs
-	Properties/Settings.settings
-	Properties/Settings.Designer.cs
+    
+    Properties/AssemblyInfo.cs
+    Properties/Resources.resx
+    Properties/Resources.Designer.cs
+    Properties/Settings.settings
+    Properties/Settings.Designer.cs
 
     App.xaml
-	App.xaml.cs
-	
-	MainWnd.xaml
-	MainWnd.xaml.cs
+    App.xaml.cs
+    
+    MainWnd.xaml
+    MainWnd.xaml.cs
 )
 
 # Set resource file properties.
 csharp_set_designer_cs_properties(
-	Properties/AssemblyInfo.cs
-	Properties/Resources.resx
-	Properties/Resources.Designer.cs
-	Properties/Settings.settings
-	Properties/Settings.Designer.cs
+    Properties/AssemblyInfo.cs
+    Properties/Resources.resx
+    Properties/Resources.Designer.cs
+    Properties/Settings.settings
+    Properties/Settings.Designer.cs
 )
 
 # Set the source file properties for WPF.
@@ -37,10 +37,10 @@ csharp_set_xaml_cs_properties(
     App.config
 
     App.xaml
-	App.xaml.cs
-	
-	MainWnd.xaml
-	MainWnd.xaml.cs
+    App.xaml.cs
+    
+    MainWnd.xaml
+    MainWnd.xaml.cs
 )
 
 # Set the xaml as ApplicationDefinition for WPF.
@@ -61,18 +61,18 @@ set(CMAKE_CSharp_FLAGS "/langversion:latest")
 # Add in the .NET reference libraries.
 set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DOTNET_REFERENCES
     "PresentationCore"
-	"PresentationFramework"
+    "PresentationFramework"
     "System"
     "System.Core"
-	"System.Xaml"
+    "System.Xaml"
     "System.Xml"
     "WindowsBase"
 )
 
 # If necessary, link in other library dependencies that were built locally in this source tree.
 target_link_libraries(${PROJECT_NAME}
-	"KeLi.HelloCMake.Business"
-	"KeLi.HelloCMake.Utils"
+    "KeLi.HelloCMake.Business"
+    "KeLi.HelloCMake.Utils"
 )
 
 # If necessary, link in other library/DLL references, such as 3rd party libraries.
@@ -80,5 +80,5 @@ set_property(TARGET ${PROJECT_NAME} PROPERTY
     VS_DOTNET_REFERENCE_RevitAPI "${LIBS_PATH}/Revit.API.2016/RevitAPI.dll"
 )
 set_property(TARGET ${PROJECT_NAME} PROPERTY
-	VS_DOTNET_REFERENCE_RevitAPIUI "${LIBS_PATH}/Revit.API.2016/RevitAPIUI.dll"
+    VS_DOTNET_REFERENCE_RevitAPIUI "${LIBS_PATH}/Revit.API.2016/RevitAPIUI.dll"
 )

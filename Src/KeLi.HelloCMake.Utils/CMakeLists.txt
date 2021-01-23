@@ -8,22 +8,16 @@ include(CSharpUtilities)
 # Define the library, including any .cs files. 
 # The .resx and other Properties files are optional here, but including them makes them visible in the VS solution for easy editing. 
 add_library(${PROJECT_NAME} SHARED
-	Properties/AssemblyInfo.cs
+    Properties/AssemblyInfo.cs
 
     ProductUtil.cs
 )
-
-# Set the source file properties for Windows Forms.
-#csharp_set_windows_forms_properties()
 
 # Set the .NET Framework version.
 set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DOTNET_TARGET_FRAMEWORK_VERSION "v4.5")
 
 # Sets the root namespace.
 set_property(TARGET ${PROJECT_NAME} PROPERTY VS_GLOBAL_ROOTNAMESPACE ${PROJECT_NAME})
-
-# Set the executable to be 32/64-bit.
-#set_property(TARGET ${PROJECT_NAME} PROPERTY WIN32_EXECUTABLE TRUE)
 
 # Set the C# language version (defaults to 3.0).
 set(CMAKE_CSharp_FLAGS "/langversion:latest")
@@ -34,21 +28,18 @@ set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DOTNET_REFERENCES
     "System.Core"
 )
 
-# If necessary, link in other library dependencies that were built locally in this source tree.
-#target_link_libraries()
-
 # If necessary, link in other library/DLL references, such as 3rd party libraries.
 set_property(TARGET ${PROJECT_NAME} PROPERTY
     VS_DOTNET_REFERENCE_RevitAPI "${LIBS_PATH}/Revit.API.2016/RevitAPI.dll"
 )
 set_property(TARGET ${PROJECT_NAME} PROPERTY
-	VS_DOTNET_REFERENCE_RevitAPIUI "${LIBS_PATH}/Revit.API.2016/RevitAPIUI.dll"
+    VS_DOTNET_REFERENCE_RevitAPIUI "${LIBS_PATH}/Revit.API.2016/RevitAPIUI.dll"
 )
 
 set_property(TARGET ${PROJECT_NAME} PROPERTY VS_PACKAGE_REFERENCES 
-	"Newtonsoft.Json_12.0.3"
-	
-	"EPPlus_5.5.1"
-	"Microsoft.IO.RecyclableMemoryStream_1.3.6"
-	"System.ComponentModel.Annotations_4.7.0"
+    "Newtonsoft.Json_12.0.3"
+    
+    "EPPlus_5.5.1"
+    "Microsoft.IO.RecyclableMemoryStream_1.3.6"
+    "System.ComponentModel.Annotations_4.7.0"
 )
